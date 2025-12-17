@@ -400,8 +400,6 @@ export default function WrappedPage() {
         return <SocialStatsSlide data={data} />;
       case "stars":
         return <StarsSlide data={data} />;
-      case "bio":
-        return <BioSlide data={data} />;
       case "codeSize":
         return <CodeSizeSlide data={data} />;
       case "reviews":

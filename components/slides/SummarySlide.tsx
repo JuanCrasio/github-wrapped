@@ -67,7 +67,7 @@ export function SummarySlide({ data }: SummarySlideProps) {
       `💻 ${data.stats.totalCommits.toLocaleString()} commits\n` +
       `🔥 ${data.stats.longestStreak} day longest streak\n` +
       `⭐ ${data.stats.totalStars} stars earned\n` +
-      `📦 ${data.stats.totalRepos} repositories\n\n` +
+      `📦 ${data.stats.totalReposContributed} repositories\n\n` +
       `Check out my year in code: ${url}`;
 
     if (platform === "twitter") {
