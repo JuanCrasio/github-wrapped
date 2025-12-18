@@ -33,16 +33,14 @@ export function RadialSpotlightBackground({
       {/* Dark base background */}
       <div className="absolute inset-0 bg-[#0d1117]" />
       
-      {/* Animated pulsing orbs behind spotlight */}
+      {/* Static pulsing orbs behind spotlight */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl"
           style={{ backgroundColor: hexToRgba(spotlightColor, 0.15) }}
           animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-            x: [0, 40, 0],
-            y: [0, -30, 0],
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.4, 0.3],
           }}
           transition={{
             duration: 6,
@@ -54,10 +52,8 @@ export function RadialSpotlightBackground({
           className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl"
           style={{ backgroundColor: hexToRgba(spotlightColor, 0.12) }}
           animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2],
-            x: [0, -40, 0],
-            y: [0, 30, 0],
+            scale: [1.1, 1, 1.1],
+            opacity: [0.2, 0.35, 0.2],
           }}
           transition={{
             duration: 7,

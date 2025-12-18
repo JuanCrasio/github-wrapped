@@ -15,6 +15,8 @@ import {
   GitPullRequest,
   GitCommit,
   Code2,
+  Linkedin,
+  ExternalLink,
 } from "lucide-react";
 import { isValidGitHubUsername, getCurrentYear } from "@/lib/utils";
 
@@ -300,19 +302,46 @@ export default function HomePage() {
           transition={{ delay: 0.8 }}
           className="mt-12 text-center text-github-muted text-sm"
         >
-          <p className="mb-2">
+          <p className="mb-4">
             Built with 💚 inspired by{" "}
             <span className="text-github-green">Spotify Wrapped</span>
           </p>
-          <p>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-            >
-              View on GitHub
-            </a>
+          
+          {/* Creator attribution */}
+          <div className="mb-4">
+            <p className="text-github-muted mb-3">Created by</p>
+            <div className="flex items-center justify-center gap-4">
+              <motion.a
+                href="https://github.com/RakshitKhajuria/github-year-in-review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 glass rounded-full hover:bg-white/10 transition-colors group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Github className="w-4 h-4 text-white group-hover:text-github-green transition-colors" />
+                <span className="text-white text-sm">GitHub Project</span>
+                <ExternalLink className="w-3 h-3 text-github-muted group-hover:text-white transition-colors" />
+              </motion.a>
+              
+              <motion.a
+                href="https://www.linkedin.com/in/rakshit-khajuria/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 glass rounded-full hover:bg-white/10 transition-colors group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Linkedin className="w-4 h-4 text-white group-hover:text-blue-400 transition-colors" />
+                <span className="text-white text-sm">LinkedIn</span>
+                <ExternalLink className="w-3 h-3 text-github-muted group-hover:text-white transition-colors" />
+              </motion.a>
+            </div>
+          </div>
+          
+          <p className="text-xs text-github-muted/70">
+            Made by{" "}
+            <span className="text-white font-medium">Rakshit Khajuria</span>
           </p>
         </motion.footer>
       </div>

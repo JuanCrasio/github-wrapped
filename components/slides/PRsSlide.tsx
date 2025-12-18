@@ -51,7 +51,7 @@ export function PRsSlide({ data }: PRsSlideProps) {
       </div>
 
         <div className="relative z-10 text-center w-full max-w-4xl mx-auto my-auto px-4 md:px-8">
-        {/* Icon */}
+        {/* Icon with PR text */}
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
@@ -59,13 +59,12 @@ export function PRsSlide({ data }: PRsSlideProps) {
           className="mb-8"
         >
           <div className="relative">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute inset-0 bg-white/20 rounded-full blur-2xl"
-            />
-            <div className="relative bg-white/20 backdrop-blur-sm p-6 rounded-full">
-              <GitMerge className="w-16 h-16 text-white" />
+            <div className="relative bg-white/20 backdrop-blur-sm px-8 py-6 rounded-full flex items-center gap-4">
+              <GitMerge className="w-16 h-16 text-white flex-shrink-0" />
+              <div className="text-left">
+                <p className="text-white text-2xl md:text-3xl font-semibold">Pull Requests</p>
+                <p className="text-white/70 text-base md:text-lg">Code contributions</p>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -98,15 +97,31 @@ export function PRsSlide({ data }: PRsSlideProps) {
           />
         </motion.div>
 
-        {/* Label */}
-        <motion.p
+        {/* PR-style creative line */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-3xl md:text-4xl font-light text-white/90 mb-12"
+          className="mb-12"
         >
-          pull requests this year!
-        </motion.p>
+          <div className="glass-premium px-6 py-4 rounded-full border border-white/10 inline-block">
+            <div className="flex items-center gap-3">
+              <GitPullRequest className="w-5 h-5 text-blue-400 flex-shrink-0" />
+              <div className="text-left">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-white/60 text-sm font-mono">#{totalPRs}</span>
+                  <span className="text-white/40 text-sm">•</span>
+                  <span className="text-green-400 text-xs font-semibold bg-green-400/10 px-2 py-0.5 rounded">
+                    merged
+                  </span>
+                </div>
+                <p className="text-white text-xl md:text-2xl font-medium mt-1">
+                  feat: {totalPRs} pull request{totalPRs !== 1 ? 's' : ''} opened this year 🚀
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Stats Cards */}
         <motion.div

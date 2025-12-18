@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState, useCallback, useRef } from "react";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams, useSearchParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Share2 } from "lucide-react";
+import { Share2, Home } from "lucide-react";
 import type { WrappedData } from "@/lib/types";
 
 // Slide components
@@ -59,6 +59,7 @@ type SlideType = (typeof SLIDES)[number];
 export default function WrappedPage() {
   const params = useParams();
   const searchParams = useSearchParams();
+  const router = useRouter();
   const username = params.username as string;
   const year = parseInt(searchParams.get("year") || new Date().getFullYear().toString());
   const token = searchParams.get("token") || undefined;
@@ -511,6 +512,22 @@ export default function WrappedPage() {
         onNext={nextSlide}
         className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-20 pointer-events-auto"
       />
+
+      {/* Home button (always visible) */}
+      <motion.button
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.3 }}
+        onClick={(e) => {
+          e.stopPropagation();
+          router.push("/");
+        }}
+        className="fixed top-4 left-4 md:top-6 md:left-6 p-3 rounded-full glass hover:bg-white/10 transition-colors z-20 pointer-events-auto"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <Home className="w-5 h-5 text-white" />
+      </motion.button>
 
       {/* Share button (on last slide) */}
       {currentSlide === SLIDES.length - 1 && (

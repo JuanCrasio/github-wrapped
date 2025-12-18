@@ -125,7 +125,7 @@ export const SLIDESHOW_CONFIG = {
   transitionDuration: 600,
   
   // Progress timer size
-  progressTimerSize: 48,
+  progressTimerSize: 32,
   
   // Progress timer position
   progressTimerPosition: "top-right" as const,
